@@ -24,7 +24,7 @@ func main() {
 	http.ListenAndServe("localhost:8080", r)
 }
 
-var urlString = "mongodb+srv://zubiverse:naruto123@cluster0.wihkseb.mongodb.net/"
+var urlString = "mongodb+srv://username:password@cluster0.wihkseb.mongodb.net/"
 
 func getSession() *mongo.Client {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
